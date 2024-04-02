@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/Home/HomePage";
+import Activity1 from "./pages/activities/Activity1";
+import Activity2 from "./pages/activities/Activity2";
+import Activity3 from "./pages/activities/Activity3";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="*" element={<HomePage />} />
+        <Route path="/etude-impact&environnemental" element={<Activity1 />} />
+        <Route path="/etude-sociale&demographique" element={<Activity2 />} />
+        <Route path="/etude-de-marche" element={<Activity3 />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

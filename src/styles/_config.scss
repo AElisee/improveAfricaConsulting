@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.transition {
+  transition: all 200ms ease-in-out;
+}
+
+.page-title {
+  @media screen and (max-width: 850px) {
+    font-size: 26px;
+  }
+}
+.section-title {
+  @media screen and (max-width: 850px) {
+    font-size: 26px;
+  }
+}
+
+// les couleurs
+$color_1: #0d7189;
+$color_2: #83989e;
+$color_3: #e73433;
+$color_4: white;
+$color_5: rgb(73, 75, 76);
+$color_6: #57cdea17;
+
+.color_1 {
+  color: $color_1;
+}
+.color_2 {
+  color: $color_2;
+}
+.color_4 {
+  color: $color_4;
+}
+.color_5 {
+  color: $color_5;
+}
+
+body {
+  max-width: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+
+  transition: all 200ms ease-in-out;
+}
+
+.mw-1200 {
+  max-width: 1200px;
+}
+
+.m-0-auto {
+  margin: 0 auto;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.pg {
+  padding: 0 10px;
+}
+
+.global-hr {
+  height: 1.5px;
+  width: 180px;
+  background-color: white;
+  margin-bottom: 25px;
+}
+
+.title-hr {
+  height: 1.5px;
+  width: 100px;
+  background-color: $color_1;
+  margin-bottom: 25px;
+
+  @media screen and (max-width: 850px) {
+    width: 80px;
+  }
+}
