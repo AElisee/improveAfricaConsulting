@@ -7,26 +7,25 @@ const ContactForm = () => {
       <div className="ctn mw-1200 m-0-auto">
         <div className="pt-10 pb-10">
           <h2 className="section-title font-bold text-4xl  pb-5 color_1">
-            Contacts
+            Contactez-nous !
           </h2>
           <hr className="title-hr" />
         </div>
         <div className="form-box flex m-0-auto relative bg-white lg:shadow-xl md:shadow-xl">
           <div className="gap-5 p-10 pt-20 address shadow-2xl bg-cyan-700">
-            <h4 className="text-xl font-bold text-center">Contactez-nous !</h4>
             <div>
               <p className="text-lg pt-3 flex gap-4">
                 <img src="./icons/map-pin.svg" alt="" />
                 Côte d'Ivoire, Abidjan
               </p>
-              <p className="text-lg pt-3 flex gap-4">
+              <p className="text-lg pt-3  flex wrap gap-4">
                 {" "}
                 <img src="./icons/mail.svg" alt="" />
-                exemple@improve.ci
+                improveafricaconsulting@gmail.com
               </p>
               <p className="text-lg pt-3 flex gap-4">
                 <img src="./icons/phone.svg" alt="" />
-                +225 07 00 000 000
+                +225 07 49 30 59 43
               </p>
             </div>
             <div className="flex justify-center">
@@ -34,7 +33,6 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="form-ctn p-10">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             <div className="flex items-center justify-end">
               <div className="form grid">
                 <input

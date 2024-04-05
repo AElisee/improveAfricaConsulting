@@ -28,6 +28,14 @@ const NetWork = () => {
       >
         <i className="fa-brands fa-x-twitter text-lg"></i>
       </a>
+      <a
+        href="http://"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex justify-center items-center"
+      >
+        <i className="fa-brands fa-youtube text-lg"></i>
+      </a>
     </div>
   );
 };

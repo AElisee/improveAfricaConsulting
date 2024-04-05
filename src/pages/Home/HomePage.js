@@ -20,7 +20,7 @@ const HomePage = () => {
       <Mission />
       <ContactUs />
       <Team />
-      <Assets />
+      {/* <Assets /> */}
       <ContactForm />
       <Footer />
     </div>

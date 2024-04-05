@@ -22,13 +22,11 @@ const Activities = () => {
           </h3>
         </div>
         <div>
-          <p className="text-md text-center font-normal color_5">
-            {activity.description}
-          </p>
+          <p className="text-md font-normal color_5">{activity.description}</p>
         </div>
-        <div className="more flex justify-center items-center">
+        <div className="more rounded-md flex justify-center items-center">
           <Link to={activity.link} className="font-semibold">
-            <span>En savoir plus</span> <ArrowRightAltIcon />
+            <span>En savoir plus</span>
           </Link>
         </div>
       </div>

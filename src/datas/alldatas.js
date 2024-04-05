@@ -3,64 +3,56 @@ export const activities = [
     img: "./images/mother-earth-day.png",
     name: "Etude d'impact & environnemental",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum possimus blanditiis iusto, officia mollitia beatae  ",
+      " La mise en place de projets structurants doit tenir compte des caractéristiques de l’environnement humain et surtout physique dans lequel, ce projet se réalise...  ",
     link: "/etude-impact&environnemental",
   },
   {
     img: "./images/population.png",
     name: "Etude sociale & démographique",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum possimus blanditiis iusto, officia mollitia beatae rem cupiditate animi facere quos!",
+      "Les études sociales et démographiques visent à comprendre et à analyser divers aspects de la société humaine, notamment sa structure, sa composition et sa dynamique ...",
     link: "/etude-sociale&demographique",
   },
   {
     img: "./images/research.png",
-    name: "Etude de marche",
+    name: "Etude de marché",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum possimus blanditiis iusto, officia mollitia beatae rem cupiditate animi facere quos!",
+      "A compétitivité de toute entreprise est le gage de l’atteinte des objectifs qu’elle s’est fixée et des besoins auxquelles elle répond ...",
     link: "/etude-de-marche",
-  },
-];
-
-export const missions = [
-  {
-    text: "La collecte, l’analyse, l’interprétation et la gestion des données de toute nature (données quantitative, qualitative, spatiale …).",
-  },
-  {
-    text: "L’assistance des entreprises et organismes dans la prise de décisions et dans la gestion de leurs ressources.",
-  },
-  {
-    text: "La formation du personnel des entreprises et organismes sur les outils innovants de collecte et d’analyse de données.",
   },
 ];
 
 export const teamMembers = [
   {
-    name: "",
-    title: "",
-    adresse: "",
-    phone: "",
-    description: "",
+    photo: "expert-yao-Kouadio-Jean-150x150.jpg",
+    name: "Yao Jean Kouadio",
+    title: "Membre associé IAC",
+    job: "Sociologue / Démographe-Statisticien",
+    description:
+      "Diplômé des écoles internationales, cet Expert est outillé pour répondre aux questions d'ordre social notamment la dynamique familiale en Afrique Subsaharienne. Outre cela, sa formation de base, Démographe-Statisticien justifie amplement son intervention dans plusieurs ONG et institutions internationales. Son professionnalisme ne soufre d'aucune contestation. Ainsi, l'Expert Kouadio peut réaliser avec brio n'importe quel projet.",
   },
   {
-    name: "",
-    title: "",
-    adresse: "",
-    phone: "",
-    description: "",
+    photo: "expert-michelle-Becanti-600x600.jpg",
+    name: "Bécanti Michèle Bohoussou",
+    title: "Gestionnaire",
+    job: "Sociologue-Urbaniste",
+    description:
+      "La gestion de l'espace urbain est une problématique qui tutoie n'importe quel pays dans le monde en général et en particulier ceux de l'Afrique. L'Experte, de formation de base en sociologie est douée pour répondre aux questions liées à la ville, à l'urbanité, au logement, à l'habitat social ... Ses performances en ce qui concerne les études qualitatives et quantitatives plus spécifiquement les études de marché sont à souligner.",
   },
   {
-    name: "",
-    title: "",
-    adresse: "",
-    phone: "",
-    description: "",
+    photo: "Expert-gaoussou-sylla-150x150.jpg",
+    name: "Gaoussou Sylla",
+    title: "Membre associé IAC",
+    job: "Environnementaliste",
+    description:
+      "Pour répondre aux questions environnementales, avec cet Expert vous ne pouvez être mieux accompagnés ! Equité environnementale, modélisation des données quantitatives, nuisances environnementales (pollution de l’air et bruit) sont entre autres les problématiques qui passionnent le Docteur Sylla (PhD). Sa bonne aptitude à combiner les outils de la géomatique à ses études fait de lui un expert d'exception.",
   },
   {
-    name: "",
-    title: "",
-    adresse: "",
-    phone: "",
-    description: "",
+    photo: "jeph-300x300.jpeg",
+    name: "N'dri Jephté Koffi",
+    title: "Membre associé IAC",
+    job: "Géomaticien (Télédétection & SIG)",
+    description:
+      "Avoir des données est une chose, savoir quoi en faire en est une autre. De l'acquisition à l'interprétation des données géographiques en passant par leur traitement, cet expert propose des outils d'aide à la décision aux entreprises à l'aide des SIG . N'est ce pas un soulagement pour les entreprises friandes de solutions efficientes ( innovantes et moins onéreuses) !",
   },
 ];

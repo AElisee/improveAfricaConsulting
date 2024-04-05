@@ -1,6 +1,6 @@
 import { teamMembers } from "../datas/alldatas";
 const Team = () => {
-  const Card = () => {
+  const Card = ({ member }) => {
     return (
       <div
         className="t-card rounded-2xl shadow-lg p-5"
@@ -9,19 +9,21 @@ const Team = () => {
       >
         <div className="top flex gap-3">
           <div className="img-ctn flex justify-center items-center">
-            <img className="object-center" src="./icons/user.png" alt="" />
+            <img
+              className="object-center"
+              src={`./images/${member?.photo}`}
+              alt=""
+            />
           </div>
           <div className="name-title flex flex-col justify-center">
-            <h3 className="font-bold text-lg color_1">Pierre Arnaud</h3>
-            <h4 className="font-semibold">Informaticien</h4>
+            <h3 className="font-bold text-lg color_1">{member?.name}</h3>
+            <h4 className="font-semibold text-sm">{member?.job}</h4>
+            <hr className="hr-red" />
+            <h4 className="text-sm">{member?.title}</h4>
           </div>
         </div>
-        <div className="bottom color_5 flex items-center">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            alias, similique vel dolorem magni exercitationem est voluptate eum
-            velit modi.
-          </p>
+        <div className="bottom color_5 flex items-center text-sm">
+          <p>{member?.description}</p>
         </div>
       </div>
     );

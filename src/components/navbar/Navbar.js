@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import NetWork from "../NetWork";
 
 const Navbar = () => {
   const [isclose, setIsclose] = useState(true);
@@ -9,61 +10,43 @@ const Navbar = () => {
     setIsclose(!isclose);
   };
   return (
-    <nav className="navbar w-full flex justify-center sticky h-[75px] shadow-sm pg">
-      <div className="navbar-ctn flex w-full mw-1200">
+    <nav className="navbar w-full flex flex-col sticky shadow-sm ">
+      <div className="bar"></div>
+      <div className="navbar-ctn flex w-full mw-1200 m-0-auto   pb-5 pt-5">
         <div className="logo flex  justify-start items-center">logo</div>
-        <ul
-          className={`flex menu justify-end items-center cursor-pointer ${
-            !isclose ? "open" : ""
-          }`}
-        >
-          <li>
-            <NavLink to="/" className="font-semibold">
-              Accueil
-            </NavLink>
-          </li>
-          <li className="dropdown">
-            <div className="flex justify-between items-center">
-              <span className="font-semibold">Domaine d'activité</span>
-              <span className="arrow-ctn flex justify-center items-center">
-                <KeyboardArrowDownIcon className="arrow" />
-              </span>
-            </div>
+        <div className="flex flex-col justify-around gap-2">
+          <div className="network flex justify-end pb-3">
+            <NetWork />
+          </div>
+          <ul
+            className={`flex menu justify-end items-center cursor-pointer ${
+              !isclose ? "open" : ""
+            }`}
+          >
+            <li>
+              <NavLink
+                to="/"
+                className={`font-semibold ${(nav) => (nav.isActive ? "" : "")}`}
+              >
+                Accueil
+              </NavLink>
+            </li>
 
-            <ul className="dropdown-list shadow-md rounded-sm">
-              <li>
-                <NavLink
-                  to={"/etude-impact&environnemental"}
-                  className="text-sm"
-                >
-                  Etude d'impact & environnemental
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/etude-sociale&demographique"
-                  className={"text-sm"}
-                >
-                  Etude sociale & démographique
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/etude-de-marche" className={"text-sm"}>
-                  Etude de marche
-                </NavLink>
-              </li>
-            </ul>
-          </li>
-          <li className="font-semibold">
-            <NavLink to="/">Notre Mission</NavLink>
-          </li>
-          <li className="font-semibold">
-            <NavLink to="/">Nos Attouts</NavLink>
-          </li>
-          <li className="font-semibold text-base">
-            <NavLink to="/">A propos</NavLink>
-          </li>
-        </ul>
+            <li className="font-semibold">
+              <NavLink to="/expertise">Expertise</NavLink>
+            </li>
+            <li className="font-semibold">
+              <NavLink to="/service">Service</NavLink>
+            </li>
+            <li className="font-semibold text-base">
+              <NavLink to="/realisation">Réalisation</NavLink>
+            </li>
+            <li className="font-semibold text-base">
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
+          </ul>
+        </div>
+
         <div className="menuIcon  flex items-center">
           {isclose ? (
             <img src="/icons/menu-deep.svg" alt="" onClick={handleClick} />
