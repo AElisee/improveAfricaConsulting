@@ -1,5 +1,4 @@
 import React from "react";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 const ContactUs = () => {
   return (
     <div className="contact  flex justify-center items-center">

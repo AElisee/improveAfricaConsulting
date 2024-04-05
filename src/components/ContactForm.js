@@ -1,5 +1,6 @@
 import React from "react";
 import NetWork from "./NetWork";
+import { email, phone_number, address } from "../datas/alldatas";
 
 const ContactForm = () => {
   return (
@@ -16,16 +17,15 @@ const ContactForm = () => {
             <div>
               <p className="text-lg pt-3 flex gap-4">
                 <img src="./icons/map-pin.svg" alt="" />
-                Côte d'Ivoire, Abidjan
+                <span className="text-sm font-semibold">{address}</span>
               </p>
               <p className="text-lg pt-3  flex wrap gap-4">
-                {" "}
                 <img src="./icons/mail.svg" alt="" />
-                improveafricaconsulting@gmail.com
+                <span className="text-sm font-semibold">{email}</span>
               </p>
               <p className="text-lg pt-3 flex gap-4">
                 <img src="./icons/phone.svg" alt="" />
-                +225 07 49 30 59 43
+                <span className="text-sm font-semibold">{phone_number}</span>
               </p>
             </div>
             <div className="flex justify-center">

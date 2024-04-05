@@ -56,3 +56,7 @@ export const teamMembers = [
       "Avoir des données est une chose, savoir quoi en faire en est une autre. De l'acquisition à l'interprétation des données géographiques en passant par leur traitement, cet expert propose des outils d'aide à la décision aux entreprises à l'aide des SIG . N'est ce pas un soulagement pour les entreprises friandes de solutions efficientes ( innovantes et moins onéreuses) !",
   },
 ];
+
+export const phone_number = "+225 07 49 30 59 43";
+export const email = "improveafricaconsulting@gmail.com";
+export const address = "Abidjan, Côte d'Ivoire";

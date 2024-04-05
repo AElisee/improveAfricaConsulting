@@ -134,6 +134,15 @@
   @media screen and (max-width: 650px) {
     padding: 0 10px;
   }
+
+  .network {
+    a {
+      background-color: $color_1;
+      .fa-brands {
+        color: white;
+      }
+    }
+  }
 }
 
 // Header
@@ -407,6 +416,9 @@
         }
       }
     }
+  }
+  .fa-brands {
+    color: $color_1;
   }
 }
 

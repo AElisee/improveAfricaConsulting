@@ -1,6 +1,7 @@
 import React from "react";
 import NetWork from "./NetWork";
 import Logo from "./Logo";
+import { email, phone_number, address } from "../datas/alldatas";
 
 const Footer = () => {
   return (
@@ -19,23 +20,23 @@ const Footer = () => {
             <p className="uppercase text-sm font-bold tracking-wider p-2 text-gray-400">
               Adresse
             </p>
-            <span className="text-white">Abidjan, Côte d'Ivoire</span>
+            <span className="text-white">{address}</span>
           </div>
           <div className="phone flex flex-col items-center">
             <p className="uppercase text-sm font-bold tracking-wider p-2 text-gray-400">
               Telephone
             </p>
-            <span className="text-white"> (+225) 07 00 00 00 00</span>
+            <span className="text-white"> {phone_number} </span>
           </div>
           <div className="mail flex flex-col items-center">
             <p className="uppercase text-sm font-bold tracking-wider  p-2 text-gray-400">
               mail
             </p>
-            <span className="text-white">exemple@improve.ci</span>
+            <span className="text-white">{email}</span>
           </div>
         </div>
         <div>
-          <hr/>
+          <hr />
           <p className="text-center p-7 text-white">
             Copyright {new Date().getFullYear()} - Improve Africa Consulting |
             Tous droits réservés.
