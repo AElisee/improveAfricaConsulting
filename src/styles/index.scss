@@ -1,0 +1,446 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./config";
+
+// Navbar
+nav {
+  .network {
+    a {
+      background-color: $color_1;
+      .fa-brands {
+        color: white;
+      }
+
+      &:hover {
+        background-color: white;
+        .fa-brands {
+          color: $color_1;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  .network {
+    a {
+      background-color: white;
+      .fa-brands {
+        color: #374151;
+      }
+
+      &:hover {
+        background-color: #374151;
+        .fa-brands {
+          color: white;
+        }
+      }
+    }
+  }
+}
+// .navbar {
+//   transition: all 200ms ease-in-out;
+//   background-color: white;
+//   height: max-content;
+//   z-index: 200;
+//   position: sticky;
+//   top: 10;
+//   left: 0;
+
+//   .active {
+//     color: $color_3;
+//     border-bottom: solid 3px $color_1;
+//     margin: 0 auto;
+//     height: 5px;
+//     padding-bottom: 5px;
+//     transition: all 200ms ease-in-out;
+//   }
+
+//   .bar {
+//     width: 100%;
+//     height: 10px;
+//     background-color: $color_1;
+//   }
+//   .logo {
+//     flex: 20%;
+//   }
+//   .menu {
+//     flex: 80%;
+//     gap: 15px;
+//     @media screen and (max-width: 850px) {
+//       gap: 0;
+//     }
+
+//     > li:not(:last-child) {
+//       @media screen and (max-width: 850px) {
+//         padding: 10px 0;
+//         width: 100%;
+//         border-bottom: 1px solid #e5e7eb;
+//       }
+//     }
+
+//     // .dropdown {
+//     //   position: relative;
+
+//     //   .dropdown-list {
+//     //     min-width: 300px;
+//     //     position: absolute;
+//     //     top: 25px;
+//     //     display: none;
+//     //     background-color: white;
+
+//     //     @media screen and (max-width: 850px) {
+//     //       width: 100%;
+//     //       position: relative;
+//     //       top: 5px;
+//     //       margin-bottom: 10px;
+//     //     }
+//     //   }
+
+//     //   .arrow-ctn {
+//     //     margin: 0 7px;
+//     //     @media screen and (max-width: 850px) {
+//     //       height: 25px;
+//     //       width: 25px;
+//     //       border-radius: 5px;
+//     //       background-color: #e5e7eb;
+//     //     }
+//     //   }
+
+//     //   &:hover {
+//     //     .dropdown-list {
+//     //       width: 600px !important;
+//     //       display: block;
+//     //       transform: translateX(-10px);
+
+//     //       li {
+//     //         padding: 7px 20px;
+//     //         color: #1f2937;
+
+//     //         &:hover {
+//     //           color: #020617;
+//     //           font-weight: 600;
+//     //         }
+//     //       }
+//     //     }
+//     //     .arrow {
+//     //       transform: rotate(180deg);
+//     //     }
+//     //   }
+//     // }
+
+//     @media screen and (max-width: 850px) {
+//       padding: 10px 40px;
+//       background: white;
+//       z-index: 100;
+//       flex-direction: column;
+//       position: absolute;
+//       top: 65px;
+//       left: 0;
+//       width: 100vw;
+//       height: min-content;
+//       justify-content: start;
+//       align-items: start;
+//       visibility: hidden;
+
+//       &.open {
+//         // opacity: 1;
+//         visibility: visible;
+//       }
+//     }
+//   }
+
+//   .network {
+//     @media screen and (max-width: 850px) {
+//       display: none;
+//     }
+//   }
+
+//   .menuIcon {
+//     display: none;
+
+//     @media screen and (max-width: 850px) {
+//       display: flex;
+//     }
+//   }
+
+//   @media screen and (max-width: 650px) {
+//     padding: 0 10px;
+//   }
+
+//
+//   }
+// }
+
+// Header
+.header {
+  max-width: 100%;
+  height: 100vh;
+  // background: linear-gradient(to right, #026077, rgba(255, 255, 255, 0.164)),
+  //   url("./../../public/assets/slide.webp");
+  background: url("./../../public/assets/slide.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+// activities
+.activities {
+  .activities-ctn {
+    .activity-card {
+      width: 380px;
+      height: 420px;
+      // min-width: 350px;
+      transform: translateY(-30px);
+      display: grid;
+      grid-template-rows: 25% 15% 50% 10%;
+
+      @media screen and (max-width: 850px) {
+        width: 85vw;
+      }
+    }
+  }
+}
+
+// missions
+.mission {
+  background-color: #eff6f2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .ctn {
+    gap: 10px;
+    .left {
+      width: 50%;
+
+      img-ctn {
+      }
+    }
+    .right {
+      width: 50%;
+
+      a {
+        width: max-content;
+        padding: 10px 20px;
+        background-color: $color_1;
+        color: $color_4;
+      }
+    }
+  }
+}
+
+.contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url("./../../public/assets/workspace-1280538_1280.webp");
+
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  padding: 25px 0;
+
+  h3 {
+    padding: 20px 0;
+    width: 90%;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgb(55, 54, 54);
+  }
+
+  .ctn {
+    height: 250px;
+    a {
+      padding: 10px 20px;
+      width: 230px;
+      margin: 0 auto;
+
+      border: 3px solid white;
+
+      @media screen and (max-width: 850px) {
+        font-size: 16px;
+        padding: 10px 5px;
+      }
+
+      .arrow-right {
+        font-size: 26px;
+      }
+
+      &:hover {
+        .arrow-right {
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+}
+
+// Team
+.team {
+  .card-ctn {
+    .t-card {
+      .top {
+        margin-bottom: 8px;
+        .img-ctn {
+          width: 85px;
+          height: 85px;
+          border-radius: 350px;
+          overflow: hidden;
+          border: 3px solid $color_1;
+        }
+      }
+    }
+  }
+}
+
+// Attouts
+.asset {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $color_6;
+  height: max-content;
+  .ctn {
+  }
+}
+
+.a-title {
+  height: 250px;
+
+  @media screen and (max-width: 650px) {
+    height: 170px;
+  }
+}
+// contact-form
+.contact-form {
+  @media screen and (max-width: 900px) {
+    box-shadow: none;
+  }
+  .form-box {
+    @media screen and (max-width: 900px) {
+      width: 85%;
+    }
+    @media screen and (max-width: 850px) {
+      display: grid;
+      width: 100%;
+    }
+
+    .address {
+      width: 45%;
+      display: grid;
+      grid-template-rows: 80% 20%;
+      align-items: center;
+
+      @media screen and (max-width: 850px) {
+        display: none;
+      }
+    }
+
+    .form-ctn {
+      width: 55%;
+
+      @media screen and (max-width: 850px) {
+        width: 100%;
+        padding: 5px;
+      }
+
+      .form {
+        width: 100%;
+        input[type="text"],
+        textarea {
+          width: 100%;
+          border: 1px solid rgb(107, 123, 136);
+          outline: none;
+          border-radius: 10px;
+          margin-top: 20px;
+          padding: 10px;
+
+          &:focus {
+            background-color: rgb(223, 229, 235);
+          }
+        }
+        textarea {
+          resize: none;
+        }
+      }
+    }
+  }
+  .fa-brands {
+    color: $color_1;
+  }
+}
+
+.footer {
+  background-color: #282f3b;
+
+  hr {
+    height: 1.5px;
+    background-color: #6b7280;
+    border: none;
+  }
+  .f-center {
+    padding: 10px 0;
+
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+    }
+    > div {
+      padding: 10px 25px;
+    }
+  }
+}
+
+.network {
+  a {
+    width: 28px;
+    height: 28px;
+    border-radius: 360px;
+    background-color: #e2e8f0; // #f1f5f9;
+
+    i {
+      &:hover {
+        transform: translateY(-3px);
+        transition: all 200ms ease-in-out;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+
+.go-totop {
+  z-index: 300;
+  visibility: hidden;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  padding: 20px;
+}
+
+.a-title {
+  text-shadow: 1px 1px 2px gray;
+  color: white;
+}
+
+.activity_1 {
+  .img-ctn {
+    background: url("./../../public/images/env.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+.activity_2 {
+  .img-ctn {
+    background: url("./../../public/images/social.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.activity_3 {
+  .img-ctn {
+    background: url("./../../public/images/etude_marche.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}

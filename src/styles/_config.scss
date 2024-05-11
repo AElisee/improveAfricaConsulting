@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.transition {
+  transition: all 200ms ease-in-out;
+}
+
+.page-title {
+  @media screen and (max-width: 850px) {
+    font-size: 26px;
+  }
+}
+
+// les couleurs
+$color_1: #0d7189;
+$color_2: #83989e;
+$color_3: #e73433;
+$color_4: white;
+$color_5: rgb(73, 75, 76);
+$color_6: #57cdea17;
+
+.color_1 {
+  color: $color_1;
+}
+.color_2 {
+  color: $color_2;
+}
+.color_4 {
+  color: $color_4;
+}
+.color_5 {
+  color: $color_5;
+}
+
+._bg-c1 {
+  background-color: $color_1;
+}
+._bg-2 {
+  background-color: $color_2;
+}
+._bg-c3 {
+  background-color: $color_3;
+}
+._bg-c4 {
+  background-color: $color_4;
+}
+._bg-c5 {
+  background-color: $color_5;
+}
+
+body {
+  max-width: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+
+  transition: all 200ms ease-in-out;
+}
+
+.global-hr {
+  height: 1.5px;
+  width: 180px;
+  background-color: white;
+  margin-bottom: 25px;
+}
+
+.hr-red {
+  height: 2px;
+  width: 110px;
+  background-color: $color_3;
+  margin: 7px 0;
+}
+
+.title-hr {
+  height: 1.5px;
+  width: 150px;
+  background-color: $color_1;
+  margin-bottom: 25px;
+
+  @media screen and (max-width: 850px) {
+    width: 80px;
+  }
+}
+
+// .active {
+//   color: $color_3;
+//   padding: 0.5rem;
+//   font-weight: 600;
+// }
+
+.shape-img {
+  shape-outside: margin-box;
+  width: 40%;
+  height: 300px;
+
+  @media screen and (max-width: 750px) {
+    height: 200px;
+  }
+}
+
+// background Image
+
+.about {
+  background: url("./../../public/assets/compass-7592447_1280.webp");
+  background-size: cover;
+  background-position: center;
+}
+.expertise {
+  background: url("./../../public/assets/brushes-3129361_1280.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.service {
+  background: url("./../../public/assets/freelancer-763730_1280.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.env {
+  background: url("./../../public/assets/black-naped-oriole-7580879_1280.webp");
+  background-size: cover;
+  background-position: center;
+}
+.sociale {
+  background: url("./../../public/assets/strike-51212_1280.webp");
+  background-size: cover;
+  background-position: center;
+}
+.urbain {
+  background: url("./../../public/assets/urbain.webp");
+  background-size: cover;
+  background-position: center;
+}
+.marche {
+  background: url("./../../public/assets/business-2904773_1280.webp");
+  background-size: cover;
+  background-position: center;
+}
+.formation {
+  background: url("./../../public/assets/formation.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-contact {
+  background: url("./../../public/assets/telephone-3594206_1280.webp");
+  background-size: cover;
+  background-position: center;
+}
+.realisation {
+  background: url("./../../public/assets/creativity-819371_1280.webp");
+  background-size: cover;
+  background-position: center;
+}
