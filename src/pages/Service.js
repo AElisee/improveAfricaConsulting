@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Service = () => {
   return (
@@ -30,13 +31,12 @@ const Service = () => {
               projet...
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
-              <a
+              <Link
                 className="fit px-8 py-1 _bg-c1 color_4 rounded-md hover:bg-white hover:text-primary hover:font-semibold   hover:border-2 hover:border-primary "
-                href="/service/etude-impact-envrionnematal"
-                rel="noopener noreferrer"
+                to="/service/etude-impact-envrionnematal"
               >
                 Lire +
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -57,13 +57,12 @@ const Service = () => {
               associations...
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
-              <a
+              <Link
                 className="fit px-8 py-1 _bg-c1 color_4 rounded-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
-                href="service/etude-sociale-et-demographique"
-                rel="noopener noreferrer"
+                to="service/etude-sociale-et-demographique"
               >
                 Lire +
-              </a>
+              </Link>
             </div>
           </div>
           {/* IMAGE */}
@@ -100,13 +99,12 @@ const Service = () => {
               d'acquérir des données de qualité...
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
-              <a
+              <Link
                 className="fit px-8 py-1 _bg-c1 color_4 rounded-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
-                href="service/etude-urbaine"
-                rel="noopener noreferrer"
+                to="service/etude-urbaine"
               >
                 Lire +
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -128,13 +126,12 @@ const Service = () => {
               globaux....
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
-              <a
+              <Link
                 className="fit px-8 py-1 _bg-c1 color_4 rounded-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
-                href="service/etude-de-marche"
-                rel="noopener noreferrer"
+                to="service/etude-de-marche"
               >
                 Lire +
-              </a>
+              </Link>
             </div>
           </div>
           {/* IMAGE */}
@@ -175,13 +172,12 @@ const Service = () => {
               </p>
             </div>
             <div className="w-full p-1 flex justify-end mt-2">
-              <a
+              <Link
                 className="fit px-8 py-1 _bg-c1 color_4 rounded-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
-                href="service/formations"
-                rel="noopener noreferrer"
+                to="service/formations"
               >
                 Lire +
-              </a>
+              </Link>
             </div>
           </div>
         </div>

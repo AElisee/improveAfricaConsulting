@@ -3,7 +3,7 @@ import { activities } from "../datas/alldatas";
 const Activities = () => {
   const Card = ({ activity }) => {
     return (
-      <div className="activity-card bg-white rounded-lg shadow-lg p-5 pb-10">
+      <div className="activity-card bg-white rounded-lg shadow-lg p-5">
         <div className="img-ctn flex justify-center items-center w-full h-full">
           <div className="w-[70px] h-[70px] flex items-center justify-center">
             <img
@@ -15,10 +15,8 @@ const Activities = () => {
             />
           </div>
         </div>
-        <div className="activity text-center pt-5">
-          <h3 className="text-xl font-bold 10 color_1 flex justify-center">
-            {activity.name}
-          </h3>
+        <div className="activity text-center flex items-center justify-center">
+          <h3 className="text-xl font-bold color_1  ">{activity.name}</h3>
         </div>
         <div className="flex items-center">
           <p className="text-sm leading-7 font-normal color_5 text-justify">

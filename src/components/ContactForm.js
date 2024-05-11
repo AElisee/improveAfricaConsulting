@@ -59,7 +59,7 @@ const ContactForm = () => {
           </h2>
           <hr className="title-hr" />
         </div>
-        <div className="form-box w-11/12 h-[470px] container mx-auto flex bg-white md:shadow-lg p-4">
+        <div className="form-box w-11/12 h-[470px] container mx-auto flex bg-white md:shadow-lg md:p-4">
           <div className="gap-5 p-8 pt-20 address shadow-2xl bg-cyan-700 overflow-clip">
             <div>
               <p className="text-lg pt-3 flex gap-4">

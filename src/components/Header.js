@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <div className="header w-full h-screen pb-10 flex text-white">
@@ -28,13 +30,12 @@ const Header = () => {
             />
           </a>
           <div className="w-4/5 flex items-center justify-center">
-            <a
-              href="/service"
-              rel="noopener noreferrer"
+            <Link
+              to="/service"
               className="uppercase font-semibold text-sm md:text-sm color_1"
             >
               Domaine d'intervention
-            </a>
+            </Link>
           </div>
         </div>
       </div>
