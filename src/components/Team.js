@@ -3,7 +3,7 @@ const Team = () => {
   const Card = ({ member }) => {
     return (
       <div
-        className="t-card w-11/12 md:w-[520px] h-full md:h-[330px] rounded-2xl shadow-md p-5 m-1 flex flex-col "
+        className="t-card min-w-[360px] w-11/12 md:w-[520px] h-full md:h-[330px] rounded-2xl shadow-md p-3 m-1 flex flex-col "
         data-aos="zoom-in"
         data-aos-offset="0"
       >
