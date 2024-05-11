@@ -12,7 +12,7 @@ const Expertise = () => {
 
       {/* TEXT */}
       <div className="p-3 lg:p-8 md:pt-5">
-        <p className="leading-7 text-md">
+        <p className="leading-8 text-sm md:text-base text-justify">
           IAC est un cocktail de compétences sommant des experts complémentaires
           dans leurs savoir-faire. Il s’agit notamment de démographe,
           statisticien, sociologue, environnementalisme, de géomaticien, tous

@@ -32,7 +32,7 @@ const Marche = () => {
           >
             Contexte
           </h3>
-          <p className="leading-7 text-md">
+          <p className="leading-9 text-sm md:text-base text-justify">
             La compétitivité de toute entreprise est le gage de l’atteinte des
             objectifs qu’elle s’est fixée et des besoins auxquelles elle répond.
             Toutefois dans un contexte hautement concurrentiel, il est important
@@ -45,7 +45,7 @@ const Marche = () => {
         <h3 className="text-2xl md:text-3xl font-semibold color_3 opacity-75 pb-3">
           Définition générale
         </h3>
-        <p className="leading-7 text-md">
+        <p className="leading-9 text-sm md:text-base text-justify">
           Une étude de marché est nécessaire en aval et en amont de tout projet
           d’entreprise. Car elle permet de comprendre les enjeux liés au marché
           dans lequel l’entreprise va s’installer ou est installée.
@@ -55,7 +55,7 @@ const Marche = () => {
         <h3 className="text-2xl md:text-3xl font-semibold color_3 opacity-75 pb-3">
           Expertise du Cabinet
         </h3>
-        <p className="leading-7 text-md">
+        <p className="leading-9 text-sm md:text-base text-justify">
           Improve Africa Consulting se propose de vous prêter main-forte dans un
           schéma global d’une étude de marché complète ou de vous assister sur
           des points clés adaptées à vos besoins afin de vous aider à atteindre

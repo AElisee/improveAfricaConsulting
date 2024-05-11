@@ -15,34 +15,39 @@ const ContactForm = () => {
     e.preventDefault();
     const formMes = formMesRef.current;
 
-    emailjs
-      .sendForm(
-        "service_wfsh8e7",
-        "template_mhq5bdo",
-        form.current,
-        process.env.REACT_APP_ID
-      )
-      .then(
-        (result) => {
-          form.current.reset();
-          setMessage(<p className="text-green-600">Message envoyé !</p>);
+    form &&
+      emailjs
+        .sendForm(
+          "service_wfsh8e7",
+          "template_mhq5bdo",
+          form.current,
+          process.env.REACT_APP_ID
+        )
+        .then(
+          (result) => {
+            form.current.reset();
+            setMessage(
+              <p className="w-full px-5 py-2 rounded-md text-gray-500 bg-white border-2 border-green-100 shadow-sm text-sm">
+                Votre message a été transmis avec succès.
+              </p>
+            );
 
-          setTimeout(() => {
-            setMessage(null);
-          }, 5000);
-        },
-        (error) => {
-          setMessage(
-            <p className="text-red-600">
-              L'envoi du message a échoué, veuillez réessayer !
-            </p>
-          );
+            setTimeout(() => {
+              setMessage(null);
+            }, 7000);
+          },
+          (error) => {
+            setMessage(
+              <p className="w-full px-5 py-2 rounded-md text-gray-500 bg-white border-2 border-red-100 shadow-sm text-sm">
+                Oups, problème d'envoi. Veuillez réessayer.
+              </p>
+            );
 
-          setTimeout(() => {
-            setMessage(null);
-          }, 5000);
-        }
-      );
+            // setTimeout(() => {
+            //   setMessage(null);
+            // }, 5000);
+          }
+        );
   };
 
   return (
@@ -54,7 +59,7 @@ const ContactForm = () => {
           </h2>
           <hr className="title-hr" />
         </div>
-        <div className="form-box w-11/12 h-[450px] container mx-auto flex bg-white md:shadow-lg p-4">
+        <div className="form-box w-11/12 h-[470px] container mx-auto flex bg-white md:shadow-lg p-4">
           <div className="gap-5 p-8 pt-20 address shadow-2xl bg-cyan-700 overflow-clip">
             <div>
               <p className="text-lg pt-3 flex gap-4">
@@ -102,7 +107,7 @@ const ContactForm = () => {
                   <input
                     type="submit"
                     value="Soumettre"
-                    className="px-5 py-2 bg-primary color_4 font-semibold rounded-md text-sm md:text-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
+                    className="px-5 py-2 bg-primary color_4 font-semibold rounded-md text-sm md:text-sm hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
                   />
                 </div>
                 <div className=".formMessage">{message}</div>

@@ -32,7 +32,7 @@ const Sociale = () => {
           >
             Contexte
           </h3>
-          <p className="leading-7 text-md">
+          <p className="leading-9 text-sm md:text-base text-justify">
             Dans un contexte de mutations sociales et démographiques engendrant
             les besoins spécifiques des populations, savoir collecter, traiter
             et valoriser les données sont les défis des collectivités, des
@@ -47,7 +47,7 @@ const Sociale = () => {
         <h3 className="text-2xl md:text-3xl font-semibold color_3 opacity-75 pb-3">
           Définition générale
         </h3>
-        <p className="leading-7 text-md">
+        <p className="leading-9 text-sm md:text-base text-justify">
           Les études sociales et démographiques visent à comprendre et à
           analyser divers aspects de la société humaine, notamment sa structure,
           sa composition et sa dynamique. Ces études explorent les relations
@@ -59,7 +59,7 @@ const Sociale = () => {
         <h3 className="text-2xl md:text-3xl font-semibold color_3 opacity-75 pb-3">
           Expertise du Cabinet
         </h3>
-        <p className="leading-7 text-md">
+        <p className="leading-9 text-sm md:text-base text-justify">
           Improve Africa Consulting se propose de mettre à votre disposition une
           expertise approfondie dans l’analyse des dynamiques sociales et
           démographiques pour l’atteinte de vos objectifs basé sur des prises

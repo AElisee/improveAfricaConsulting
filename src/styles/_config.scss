@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   max-width: 100%;
+  // box-shadow: 0 0 0 3px red inset;
 }
 
 html {
@@ -63,7 +64,6 @@ body {
   font-weight: 400;
   font-style: normal;
   position: relative;
-
   transition: all 200ms ease-in-out;
 }
 
@@ -92,11 +92,9 @@ body {
   }
 }
 
-// .active {
-//   color: $color_3;
-//   padding: 0.5rem;
-//   font-weight: 600;
-// }
+.active {
+  color: #e73433;
+}
 
 .shape-img {
   shape-outside: margin-box;
@@ -109,7 +107,6 @@ body {
 }
 
 // background Image
-
 .about {
   background: url("./../../public/assets/compass-7592447_1280.webp");
   background-size: cover;

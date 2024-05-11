@@ -32,7 +32,7 @@ const Urbain = () => {
           >
             Contexte
           </h3>
-          <p className="leading-7 text-md">
+          <p className="leading-9 text-sm md:text-base text-justify">
             De la collecte des données à la réalisation du diagnostic urbain en
             passant par l'état des lieux d'une localité, IAC dispose d'une
             expertise avérée. Sa méthode de travail rigoureuse basée sur
@@ -45,7 +45,7 @@ const Urbain = () => {
         <h3 className="text-2xl md:text-3xl font-semibold color_3 opacity-75 pb-3">
           Définition générale
         </h3>
-        <p className="leading-7 text-md">
+        <p className="leading-9 text-sm md:text-base text-justify">
           Une étude urbaine est un examen systématique de divers aspects des
           villes et des zones urbaines pour comprendre leurs caractéristiques,
           leur dynamique et leurs défis. Il s'agit d'analyser des facteurs tels
@@ -62,7 +62,7 @@ const Urbain = () => {
         <h3 className="text-2xl md:text-3xl font-semibold color_3 opacity-75 pb-3">
           Expertise du Cabinet
         </h3>
-        <p className="leading-7 text-md pb-10">
+        <p className="leading-9 text-sm md:text-base text-justify pb-2">
           La méthodologie pour réaliser une étude urbaine peut varier en
           fonction des questions de recherche spécifiques, des objectifs et des
           données disponibles. Toutefois, certaines étapes et certains outils
@@ -70,8 +70,8 @@ const Urbain = () => {
         </p>
 
         {/*  */}
-        <div className="flex flex-col gap-3 md:pl-10 pl-3">
-          <p className="leading-7 text-md ">
+        <div className="flex flex-col gap-2 p-1">
+          <p className="leading-9 text-sm md:text-base text-justify ">
             <span className="font-semibold">
               • Définir les questions et objectifs de la recherche
             </span>
@@ -80,14 +80,14 @@ const Urbain = () => {
             la recherche et de guider la sélection des méthodologies et des
             outils appropriés.
           </p>
-          <p className="leading-7 text-md font-semibold ">
+          <p className="leading-9 text-sm md:text-base text-justify font-semibold ">
             • Revue de la littérature
           </p>
-          <p className="leading-7 text-md ">
+          <p className="leading-9 text-sm md:text-base text-justify">
             <span className="font-semibold">•</span> Collecte de données
             (approches à la fois quantitatives et qualitatives).
           </p>
-          <p className="leading-7 text-md ">
+          <p className="leading-9 text-sm md:text-base text-justify ">
             <span className="font-semibold">• Analyse des données</span> : Une
             fois les données collectées, elles doivent être analysées pour
             extraire des informations significatives. Les techniques d'analyse
@@ -96,7 +96,7 @@ const Urbain = () => {
             modélisation telles que l'analyse de régression ou la modélisation
             basée sur les agents.
           </p>
-          <p className="leading-7 text-md ">
+          <p className="leading-9 text-sm md:text-base text-justify">
             <span className="font-semibold">• Analyse spatiale </span>: Les
             systèmes d'information géographique (SIG) sont des outils couramment
             utilisés dans les études urbaines pour l'analyse spatiale. Les SIG
@@ -107,26 +107,26 @@ const Urbain = () => {
             prendre des décisions éclairées en matière d'urbanisme et de
             développement.
           </p>
-          <p className="leading-7 text-md ">
+          <p className="leading-9 text-sm md:text-base text-justify ">
             <span className="font-semibold">• Analyse statistique</span> :
             L'analyse statistique est utilisée pour analyser les données
             quantitatives et les hypothèses de test. IAC utilise couramment une
             diversité de logiciels pour l'analyse statistique dans les études
             urbaines.
           </p>
-          <p className="leading-7 text-md ">
+          <p className="leading-9 text-sm md:text-base text-justify ">
             <span className="font-semibold">• Analyse qualitative</span> : Les
             données qualitatives collectées par des méthodes telles que des
             entretiens ou des groupes de discussion peuvent être analysées à
             l'aide de techniques d'analyse qualitative telles que l'analyse
             thématique, l'analyse de contenu ou la théorie fondée.
           </p>
-          <p className="leading-7 text-md font-semibold ">
+          <p className="leading-9 text-sm md:text-base text-justify font-semibold ">
             • Interprétation et rapport
           </p>
         </div>
 
-        <p className="leading-7 text-md pt-10">
+        <p className="leading-9 text-sm md:text-base text-justify pt-2">
           Dans l'ensemble, le choix de la méthodologie et des outils dépend du
           contexte de recherche spécifique et des objectifs de l'étude urbaine.
           Une combinaison d'approches quantitatives et qualitatives, ainsi que

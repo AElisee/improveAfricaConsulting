@@ -14,18 +14,18 @@ const Mission = () => {
             </div>
           </div>
           {/* TEXT */}
-          <div className="md:ml-4 flex flex-col justify-between w-full md:w-1/2">
-            <p className="text-lg leading-8">
+          <div className="md:ml-4 flex flex-col justify-center w-full md:w-1/2">
+            <p className="text-base leading-7 text-justify md:pb-10">
               Parce que l’utilisation des données de qualité se montre
               indispensable dans n’importe quel domaine, IAC s’est donnée pour
               mission de contribuer à l’amélioration du cadre de vie de la
-              société à travers des études rigoureuses ...
+              société à travers des études rigoureuses...
               {/* <hr className="title-hr" /> */}
             </p>
             <div className="w-full my-4">
               <a
                 href="/a-propos"
-                className="px-5 py-2 bg-primary color_4 font-semibold rounded-md text-sm md:text-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
+                className="px-5 py-2 bg-primary color_4 font-semibold rounded-md text-sm md:text-sm hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
                 rel="noopener noreferrer"
               >
                 En savoir plus

@@ -15,20 +15,20 @@ const Activities = () => {
             />
           </div>
         </div>
-        <div className="activity text-center">
+        <div className="activity text-center pt-5">
           <h3 className="text-xl font-bold 10 color_1 flex justify-center">
             {activity.name}
           </h3>
         </div>
-        <div>
-          <p className="text-md leading-7 font-normal color_5">
+        <div className="flex items-center">
+          <p className="text-sm leading-7 font-normal color_5 text-justify">
             {activity.description.substring(0, 200)}...
           </p>
         </div>
         <div className="rounded-md flex justify-center items-center">
           <a
             href={activity.link}
-            className="px-5 py-2 _bg-c1 color_4 font-semibold rounded-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary text-sm md:text-md"
+            className="px-5 py-2 _bg-c1 color_4 font-semibold rounded-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary text-sm"
             rel="noopener noreferrer"
           >
             <span>En savoir plus</span>

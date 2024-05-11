@@ -32,7 +32,7 @@ const Formation = () => {
           >
             Contexte
           </h3>
-          <p className="leading-7 text-md">
+          <p className="leading-9 text-sm md:text-base text-justify">
             Dans le paysage concurrentiel d'aujourd'hui, les organisations axées
             sur les données ont un avantage significatif. En exploitant
             efficacement les données, les organisations peuvent rester à
@@ -46,7 +46,7 @@ const Formation = () => {
         <h3 className="text-2xl md:text-3xl font-semibold color_3 opacity-75 pb-3">
           Définition générale
         </h3>
-        <p className="leading-7 text-md">
+        <p className="leading-9 text-sm md:text-base text-justify">
           La formation est un processus dans lequel des individus ou des groupes
           acquièrent des compétences pratiques, des connaissances et des
           techniques pertinentes pour la gestion efficace d'une entreprise. Il
@@ -55,7 +55,7 @@ const Formation = () => {
           performances, la productivité et le succès général dans le monde des
           affaires.
         </p>
-        <p className="leading-7 text-md pt-3">
+        <p className="leading-9 text-sm md:text-base text-justify pt-3">
           <i>
             Parce que IAC, considère une entreprise comme un puissant canal de
             développement national voire international, nous faisons de la
@@ -67,7 +67,7 @@ const Formation = () => {
         <h3 className="text-2xl md:text-3xl font-semibold color_3 opacity-75 pb-3">
           Expertise du Cabinet
         </h3>
-        <p className="leading-7 text-md">
+        <p className="leading-9 text-sm md:text-base text-justify ">
           IAC partage son savoir-faire autour d'une diversité de compétence à
           acquérir :
         </p>

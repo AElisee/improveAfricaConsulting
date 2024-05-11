@@ -9,9 +9,9 @@ const Navbar = () => {
   const links = [
     { url: "/", title: "Accueil" },
     { url: "/a-propos", title: "A propos" },
-    { url: "/service", title: "service" },
     { url: "/expertise", title: "Expertise" },
-    { url: "/realisation", title: "Realisation" },
+    { url: "/service", title: "services" },
+    { url: "/realisation", title: "Realisations" },
     { url: "/contact", title: "Contact" },
   ];
 
@@ -40,7 +40,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="  z-50 bg-white shadow-sm">
+    <nav className="h-full z-50 bg-white shadow-sm">
       <div className="">
         {/* BANDE EN HAUT */}
         <div className="w-full h-2 _bg-c1 "></div>
@@ -61,8 +61,7 @@ const Navbar = () => {
               {links.map((link, index) => (
                 <Link
                   key={index}
-                  className={`p-2 font-semibold ${(nav) =>
-                    nav.isActive ? "active" : " "}
+                  className={`ml-4 pb-1 font-bold  focus:text-red-500 focus:border-b-2 focus:border-primary
                 `}
                   to={link.url}
                 >
@@ -79,21 +78,26 @@ const Navbar = () => {
                 onClick={() => setIsOpen((prev) => !prev)}
               >
                 {isOpen ? (
-                  <img src="/icons/x.svg" alt="" width={36} height={36} />
+                  <img
+                    src="/icons/x.svg"
+                    alt="icon-X"
+                    width={36}
+                    height={36}
+                    className="fixed right-3 top-5"
+                  />
                 ) : (
                   <img
                     src="/icons/menu-deep.svg"
-                    alt=""
+                    alt="icon-menu-deep"
                     width={36}
                     height={36}
-                    text-white
                   />
                 )}
               </button>
             </div>
             {isOpen && (
               <motion.div
-                className="absolute top-0 left-0 h-screen w-screen bg-black flex flex-col items-center justify-center text-2xl gap-6 z-30"
+                className="fixed top-0 left-0 min-h-screen w-screen bg-black flex flex-col items-center justify-center text-2xl gap-6 z-30"
                 variants={listVariants}
                 initial="closed"
                 animate="opened"

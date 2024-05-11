@@ -1,35 +1,42 @@
 import React from "react";
+import { fbLink, linkedinLink, xLink, ytLink } from "../datas/alldatas.js";
 
 const NetWork = () => {
   return (
     <div className="network flex gap-3">
+      {/* linkedIn */}
       <a
-        href="http://"
+        href={linkedinLink}
         target="_blank"
         rel="noopener noreferrer"
         className="flex justify-center items-center"
       >
-        {/* <img src="./icons/brand-linkedin.svg" alt="" /> */}
         <i className="fa-brands fa-linkedin-in text-lg"></i>
       </a>
+
+      {/* facebook */}
       <a
-        href="http://"
+        href={fbLink}
         target="_blank"
         rel="noopener noreferrer"
         className="flex justify-center items-center"
       >
         <i className="fa-brands fa-facebook-f text-lg"></i>
       </a>
+
+      {/* Facebook */}
       <a
-        href="http://"
-        target="_blank"
+        href=""
+        target={xLink}
         rel="noopener noreferrer"
         className="flex justify-center items-center"
       >
         <i className="fa-brands fa-x-twitter text-lg"></i>
       </a>
+
+      {/* youtube */}
       <a
-        href="http://"
+        href={ytLink}
         target="_blank"
         rel="noopener noreferrer"
         className="flex justify-center items-center"
