@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="h-full">
       {/* IMAGE */}
-      <div className="w-full h-[300px] md:h-[400px] p-3 md:p-8 lg:pb-5  border about bg-cover bg-center  "></div>
+      <div className="w-full h-[250px] md:h-[400px] p-3 md:p-8 lg:pb-5  border about bg-cover bg-center  "></div>
       {/* NOTRE MISSION */}
       <div className=" p-3 lg:p-8">
         <h3 className="font-bold text-3xl md:text-4xl pb-3 color_1">

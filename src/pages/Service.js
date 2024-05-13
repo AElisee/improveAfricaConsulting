@@ -5,7 +5,7 @@ const Service = () => {
   return (
     <div className="h-full w-full flex flex-col items-center justify-center  ">
       {/* IMAGE */}
-      <div className="w-full h-[300px] md:h-[400px] p-3 mg:p-8 mg:pb-5  border service"></div>
+      <div className="w-full h-[250px] md:h-[400px] p-3 mg:p-8 mg:pb-5  border service"></div>
       {/* CONTAINER */}
       <div className="py-12">
         {/* ITEM 1*/}
@@ -23,7 +23,7 @@ const Service = () => {
             <h2 className="text-2xl md:text-3xl font-semibold">
               Etude d'impact environnemental
             </h2>
-            <p className="pt-2 leading-7 text-justify">
+            <p className="pt-2 leading-8 text-justify">
               La mise en place de projets structurants doit tenir compte des
               caractéristiques de l’environnement humain et surtout physique
               dans lequel, ce projet se réalise. C’est pourquoi il est
@@ -49,7 +49,7 @@ const Service = () => {
             <h2 className="text-2xl md:text-3xl font-semibold">
               Etude sociale et démographique
             </h2>
-            <p className="pt-2 leading-7 text-justify">
+            <p className="pt-2 leading-8 text-justify">
               Dans un contexte de mutations sociales et démographiques
               engendrant les besoins spécifiques des populations, savoir
               collecter, traiter et valoriser les données sont les défis des
@@ -59,7 +59,7 @@ const Service = () => {
             <div className="w-full p-1 flex justify-end mt-2">
               <Link
                 className="fit px-8 py-1 _bg-c1 color_4 rounded-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
-                to="service/etude-sociale-et-demographique"
+                to="/service/etude-sociale-et-demographique"
               >
                 Lire +
               </Link>
@@ -91,7 +91,7 @@ const Service = () => {
             <h2 className="text-2xl md:text-3xl font-semibold">
               Etude urbaine
             </h2>
-            <p className="pt-2 leading-7 text-justify">
+            <p className="pt-2 leading-8 text-justify">
               De la collecte des données à la réalisation du diagnostic urbain
               en passant par l'état des lieux d'une localité, IAC dispose d'une
               expertise avérée. Sa méthode de travail rigoureuse basée sur
@@ -100,8 +100,8 @@ const Service = () => {
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
               <Link
+                to="/service/etude-urbaine"
                 className="fit px-8 py-1 _bg-c1 color_4 rounded-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
-                to="service/etude-urbaine"
               >
                 Lire +
               </Link>
@@ -117,7 +117,7 @@ const Service = () => {
             <h2 className="text-2xl md:text-3xl font-semibold">
               Etude de marché
             </h2>
-            <p className="pt-2 leading-7 text-justify">
+            <p className="pt-2 leading-8 text-justify">
               La compétitivité de toute entreprise est le gage de l’atteinte des
               objectifs qu’elle s’est fixée et des besoins auxquelles elle
               répond. Toutefois dans un contexte hautement concurrentiel, il est
@@ -127,8 +127,8 @@ const Service = () => {
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
               <Link
+                to="/service/etude-de-marche"
                 className="fit px-8 py-1 _bg-c1 color_4 rounded-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
-                to="service/etude-de-marche"
               >
                 Lire +
               </Link>
@@ -158,15 +158,15 @@ const Service = () => {
           {/* TEXT */}
           <div className="w-full md:w-[375px] md:h-[375px] p-4 ">
             <h2 className="text-2xl md:text-3xl font-semibold">Formations</h2>
-            <div className="pt-2 leading-7">
+            <div className="pt-2 leading-8">
               IAC partage son savoir-faire autour d'une diversité de compétence
               à acquérir :
-              <p className="pt-2 leading-7 text-justify">
+              <p className="pt-2 leading-8 text-justify">
                 <span className="font-semibold">•</span> Collecte, analyse,
                 interprétation et gestion des données de données quantitative et
                 qualitative) et ce à partir des outils informatiques dédiés;
               </p>
-              <p className="pt-2 leading-7 text-justify">
+              <p className="pt-2 leading-8 text-justify">
                 <span className="font-semibold">•</span> Formation du personnel
                 des entreprises et organismes sur les outil...
               </p>
@@ -174,7 +174,7 @@ const Service = () => {
             <div className="w-full p-1 flex justify-end mt-2">
               <Link
                 className="fit px-8 py-1 _bg-c1 color_4 rounded-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
-                to="service/formations"
+                to="/service/formations"
               >
                 Lire +
               </Link>

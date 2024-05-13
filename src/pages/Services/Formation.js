@@ -4,8 +4,8 @@ const Formation = () => {
   return (
     <div className="h-full">
       {/* IMAGE */}
-      <div className="w-full h-[300px] md:h-[400px] p-3 lg:p-8 lg:pb-5 formation bg-cover bg-center relative">
-        <h3 className="absolute left-0 bottom-0 p-3 md:p-8 text-4xl text-white font-bold drop-shadow-md">
+      <div className="w-full h-[250px] md:h-[400px] p-3 lg:p-8 lg:pb-5 formation bg-cover bg-center relative">
+        <h3 className="absolute left-0 bottom-0 p-3 md:p-8 text-2xl md:text-4xl text-white font-bold drop-shadow-md">
           SERVICE
         </h3>
       </div>

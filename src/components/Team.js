@@ -3,12 +3,12 @@ const Team = () => {
   const Card = ({ member }) => {
     return (
       <div
-        className="t-card min-w-[360px] w-11/12 md:w-[520px] h-full md:h-[330px] rounded-2xl shadow-md p-3 m-1 flex flex-col "
+        className="t-card min-w-[360px] w-11/12 md:w-[520px] h-full md:h-[320px] rounded-2xl shadow-md p-3 m-1 flex flex-col gap-3"
         data-aos="zoom-in"
         data-aos-offset="0"
       >
         <div className="top flex gap-3 h-1-/3">
-          <div className="img-ctn flex justify-center items-center">
+          <div className="img-ctn flex justify-center items-center w-[50px] h-[50px] md:w-[85px] md:h-[85px] rounded-full overflow-hidden   border-2 border-primary ">
             <img
               className="w-full h-full object-cover object-center"
               src={`./images/${member?.photo}`}
@@ -24,7 +24,7 @@ const Team = () => {
             </h4>
           </div>
         </div>
-        <div className="h-full color_5 flex items-center text-sm leading-6 text-justify">
+        <div className="h-full color_5 flex mt-5 text-sm leading-6 text-justify">
           <p>{member?.description}</p>
         </div>
       </div>

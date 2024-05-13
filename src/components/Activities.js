@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { activities } from "../datas/alldatas";
 
 const Activities = () => {
@@ -24,13 +25,12 @@ const Activities = () => {
           </p>
         </div>
         <div className="rounded-md flex justify-center items-center">
-          <a
-            href={activity.link}
+          <Link
+            to={activity.link}
             className="px-5 py-2 _bg-c1 color_4 font-semibold rounded-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary text-sm"
-            rel="noopener noreferrer"
           >
             <span>En savoir plus</span>
-          </a>
+          </Link>
         </div>
       </div>
     );

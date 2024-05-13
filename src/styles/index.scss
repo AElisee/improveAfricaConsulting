@@ -161,41 +161,6 @@ nav {
   }
 }
 
-// Team
-.team {
-  .card-ctn {
-    .t-card {
-      .top {
-        margin-bottom: 8px;
-        .img-ctn {
-          width: 85px;
-          height: 85px;
-          border-radius: 360px;
-          overflow: hidden;
-          border: 3px solid $color_1;
-        }
-      }
-    }
-  }
-}
-
-// Attouts
-.asset {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: $color_6;
-  height: max-content;
-  .ctn {
-  }
-}
-
-.a-title {
-  height: 250px;
-
-  @media screen and (max-width: 650px) {
-    height: 170px;
-  }
-}
 // contact-form
 .contact-form {
   @media screen and (max-width: 900px) {

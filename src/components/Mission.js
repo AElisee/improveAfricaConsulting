@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Mission = () => {
   return (
     <div className="mission p-5 md:p-8">
@@ -23,13 +25,13 @@ const Mission = () => {
               {/* <hr className="title-hr" /> */}
             </p>
             <div className="w-full my-4">
-              <a
-                href="/a-propos"
+              <Link
+                to="/a-propos"
                 className="px-5 py-2 bg-primary color_4 font-semibold rounded-md text-sm md:text-sm hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
                 rel="noopener noreferrer"
               >
                 En savoir plus
-              </a>
+              </Link>
             </div>
           </div>
         </div>
