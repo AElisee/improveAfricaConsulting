@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import NetWork from "../NetWork";
 import { motion } from "framer-motion";
 import Logo from "../Logo.js";
+import NavLinks from "./NavLinks.js";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
     { url: "/", title: "Accueil" },
     { url: "/a-propos", title: "A propos" },
     { url: "/expertise", title: "Expertise" },
-    { url: "/service", title: "services" },
+    { url: "/services", title: "services" },
     { url: "/realisation", title: "Realisations" },
     { url: "/contact", title: "Contact" },
   ];
@@ -59,14 +60,7 @@ const Navbar = () => {
             {/* MENU */}
             <div className="pt-3">
               {links.map((link, index) => (
-                <Link
-                  key={index}
-                  className={`ml-4 pb-1 font-bold  focus:text-red-500 focus:border-b-2 focus:border-primary
-                `}
-                  to={link.url}
-                >
-                  {link.title.toUpperCase()}
-                </Link>
+                <NavLinks key={index} link={link} />
               ))}
             </div>
           </div>

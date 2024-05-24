@@ -32,8 +32,8 @@ const Service = () => {
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
               <Link
-                className="fit px-8 py-1 _bg-c1 color_4 rounded-md hover:bg-white hover:text-primary hover:font-semibold   hover:border-2 hover:border-primary "
-                to="/service/etude-impact-envrionnematal"
+                className="fit px-8 py-1 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
+                to="/services/etude-impact-envrionnematal"
               >
                 Lire +
               </Link>
@@ -58,8 +58,8 @@ const Service = () => {
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
               <Link
-                className="fit px-8 py-1 _bg-c1 color_4 rounded-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
-                to="/service/etude-sociale-et-demographique"
+                className="fit px-8 py-1 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
+                to="/services/etude-sociale-et-demographique"
               >
                 Lire +
               </Link>
@@ -100,8 +100,8 @@ const Service = () => {
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
               <Link
-                to="/service/etude-urbaine"
-                className="fit px-8 py-1 _bg-c1 color_4 rounded-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
+                to="/services/etude-urbaine"
+                className="fit px-8 py-1 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
               >
                 Lire +
               </Link>
@@ -122,13 +122,12 @@ const Service = () => {
               objectifs qu’elle s’est fixée et des besoins auxquelles elle
               répond. Toutefois dans un contexte hautement concurrentiel, il est
               important de faire les bonnes analyses avant et pendant la mise en
-              place de toute entreprise envisageant d’atteindre ses objectifs
-              globaux....
+              place de toute entreprise...
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
               <Link
-                to="/service/etude-de-marche"
-                className="fit px-8 py-1 _bg-c1 color_4 rounded-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
+                to="/services/etude-de-marche"
+                className="fit px-8 py-1 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
               >
                 Lire +
               </Link>
@@ -173,8 +172,8 @@ const Service = () => {
             </div>
             <div className="w-full p-1 flex justify-end mt-2">
               <Link
-                className="fit px-8 py-1 _bg-c1 color_4 rounded-md hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
-                to="/service/formations"
+                className="fit px-8 py-1 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
+                to="/services/formations"
               >
                 Lire +
               </Link>

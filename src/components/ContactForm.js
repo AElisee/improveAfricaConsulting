@@ -107,7 +107,7 @@ const ContactForm = () => {
                   <input
                     type="submit"
                     value="Soumettre"
-                    className="px-5 py-2 bg-primary color_4 font-semibold rounded-md text-sm md:text-sm hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
+                    className="px-6 py-2 bg-primary color_4 font-semibold rounded-md text-sm md:text-sm hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
                   />
                 </div>
                 <div className=".formMessage">{message}</div>

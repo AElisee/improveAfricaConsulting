@@ -29,18 +29,18 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={<HomePage />} />
         <Route path="/a-propos" element={<About />} />
-        <Route path="/service" element={<Service />} />
+        <Route path="/services" element={<Service />} />
         <Route
-          path="service/etude-sociale-et-demographique"
+          path="services/etude-sociale-et-demographique"
           element={<Sociale />}
         />
         <Route
-          path="service/etude-impact-envrionnematal"
+          path="services/etude-impact-envrionnematal"
           element={<Environemmental />}
         />
-        <Route path="service/etude-urbaine" element={<Urbain />} />
-        <Route path="service/etude-de-marche" element={<Marche />} />
-        <Route path="service/formations" element={<Formation />} />
+        <Route path="services/etude-urbaine" element={<Urbain />} />
+        <Route path="services/etude-de-marche" element={<Marche />} />
+        <Route path="services/formations" element={<Formation />} />
 
         <Route path="/expertise" element={<Expertise />} />
         <Route path="/realisation" element={<Realisation />} />
