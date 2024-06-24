@@ -1,14 +1,16 @@
-import React from "react";
+import React, { Suspense } from "react";
 
 const Expertise = () => {
   return (
     <div className="h-full">
       {/* IMAGE */}
-      <div className="w-full h-[250px] md:h-[400px] p-3 lg:p-8 lg:pb-5  border expertise relative">
-        <h3 className="absolute left-0 bottom-0 p-3 md:p-8 text-2xl md:text-4xl text-white font-bold drop-shadow-md">
-          EXPERTISE
-        </h3>
-      </div>
+      <Suspense>
+        <div className="w-full h-[250px] md:h-[400px] p-3 lg:p-8 lg:pb-5  border expertise relative">
+          <h3 className="absolute left-0 bottom-0 p-3 md:p-8 text-2xl md:text-4xl text-white font-bold drop-shadow-md">
+            EXPERTISE
+          </h3>
+        </div>
+      </Suspense>
 
       {/* TEXT */}
       <div className="p-3 lg:p-8 md:pt-5">

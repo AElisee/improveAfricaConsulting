@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 
 const Environemmental = () => {
   return (
@@ -10,7 +10,7 @@ const Environemmental = () => {
         </h3>
       </div>
       <div className="p-5 md:px-10">
-        <h3 className="section-title font-bold text-4xl   pb-15 color_1">
+        <h3 className="section-title font-bold text-4xl  pb-3 color_1">
           Etude d'impact environnemental (EIE)
         </h3>
         <hr className="title-hr" />
@@ -20,11 +20,13 @@ const Environemmental = () => {
       "
       >
         {/* ABSOLUTE IMAGE */}
-        <img
-          src="/assets/environmental-protection-326923_1280.jpg"
-          alt=""
-          className="float-left mr-5 mb-1  shape-img object-cover object-center"
-        />
+        <Suspense>
+          <img
+            src="/assets/environmental-protection-326923_1280.jpg"
+            alt=""
+            className="float-left mr-5 mb-1  shape-img object-cover object-center"
+          />
+        </Suspense>
         <div className="">
           <h3
             className="text-2xl md:text-3xl font-semibold color_3 opacity-75 pb-3

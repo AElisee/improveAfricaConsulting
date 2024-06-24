@@ -19,7 +19,7 @@ const Header = () => {
         </p>
         <div className="w-[300px] h-[50px] flex p-1 cursor-pointer  bg-white rounded-md ring-2">
           <Link
-            to="/service"
+            to="/services"
             className="w-1/5 flex justify-center items-center border-r-2"
           >
             <img
@@ -30,7 +30,7 @@ const Header = () => {
           </Link>
           <div className="w-4/5 flex items-center justify-center">
             <Link
-              to="/service"
+              to="/services"
               className="uppercase font-semibold text-sm md:text-sm color_1"
             >
               Domaine d'intervention

@@ -1,11 +1,13 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Team from "../components/Team.js";
 
 const About = () => {
   return (
     <div className="h-full">
       {/* IMAGE */}
-      <div className="w-full h-[250px] md:h-[400px] p-3 md:p-8 lg:pb-5  border about bg-cover bg-center  "></div>
+      <Suspense>
+        <div className="w-full h-[250px] md:h-[400px] p-3 md:p-8 lg:pb-5  border about bg-cover bg-center  "></div>
+      </Suspense>
       {/* NOTRE MISSION */}
       <div className=" p-3 lg:p-8">
         <h3 className="font-bold text-3xl md:text-4xl pb-3 color_1">

@@ -163,13 +163,10 @@ nav {
 
 // contact-form
 .contact-form {
-  @media screen and (max-width: 900px) {
-    box-shadow: none;
-  }
   .form-box {
-    @media screen and (max-width: 900px) {
-      width: 85%;
-    }
+    // @media screen and (max-width: 900px) {
+    //   width: 85%;
+    // }
     @media screen and (max-width: 850px) {
       display: grid;
       width: 100%;
@@ -203,7 +200,7 @@ nav {
           outline: none;
           border-radius: 10px;
           margin-top: 20px;
-          padding: 10px;
+          padding: 15px;
 
           &:focus {
             background-color: rgb(223, 229, 235);
@@ -246,13 +243,6 @@ nav {
     height: 28px;
     border-radius: 360px;
     background-color: #e2e8f0; // #f1f5f9;
-
-    // i {
-    //   &:hover {
-    //     transform: translateY(-3px);
-    //     transition: all 200ms ease-in-out;
-    //   }
-    // }
 
     @media screen and (max-width: 700px) {
       width: 28px;

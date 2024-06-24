@@ -17,7 +17,7 @@ const Activities = () => {
           </div>
         </div>
         <div className="activity text-center flex items-center justify-center">
-          <h3 className="text-xl font-bold text-sky-600  ">{activity.name}</h3>
+          <h3 className="text-xl font-bold color_1 ">{activity.name}</h3>
         </div>
         <div className="flex items-center">
           <p className="text-sm leading-7 font-normal color_5 text-justify">
@@ -25,12 +25,13 @@ const Activities = () => {
           </p>
         </div>
         <div className="rounded-md flex justify-center items-center">
-          <Link
-            to={activity.link}
-            className="px-5 py-2 bg-sky-600 color_4 font-semibold rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold hover:border-2 hover:border-sky-600 text-sm"
+          <a
+            href={activity.link}
+            rel="noopener noreferrer"
+            className="px-5 py-3 bg-sky-600 color_4 font-semibold rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold hover:border-2 hover:border-sky-600 text-sm"
           >
             <span>En savoir plus</span>
-          </Link>
+          </a>
         </div>
       </div>
     );

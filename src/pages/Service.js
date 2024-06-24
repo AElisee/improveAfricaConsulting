@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Suspense } from "react";
 
 const Service = () => {
   return (
@@ -12,11 +11,13 @@ const Service = () => {
         <div className="w-full md:flex  container mx-auto">
           {/* IMAGE */}
           <div className="hidden md:flex items-center justify-center w-[375px] h-[375px]  border-2 border-slate-500 ">
-            <img
-              src="/assets/environmental-protection-326923_1280.jpg"
-              alt=""
-              className="w-full h-full object-center object-cover"
-            />
+            <Suspense>
+              <img
+                src="/assets/environmental-protection-326923_1280.jpg"
+                alt=""
+                className="w-full h-full object-center object-cover"
+              />
+            </Suspense>
           </div>
           {/* TEXT */}
           <div className="w-full md:w-[375px] md:h-[375px] p-4">
@@ -27,16 +28,15 @@ const Service = () => {
               La mise en place de projets structurants doit tenir compte des
               caractéristiques de l’environnement humain et surtout physique
               dans lequel, ce projet se réalise. C’est pourquoi il est
-              nécessaire de connaitre et comprendre l’environnement d’un
-              projet...
+              nécessaire de connaitre et comprendre...
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
-              <Link
-                className="fit px-8 py-1 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
-                to="/services/etude-impact-envrionnematal"
+              <a
+                className="fit px-8 py-2 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
+                href="/services/etude-impact-envrionnematal"
               >
                 Lire +
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -53,16 +53,16 @@ const Service = () => {
               Dans un contexte de mutations sociales et démographiques
               engendrant les besoins spécifiques des populations, savoir
               collecter, traiter et valoriser les données sont les défis des
-              collectivités, des institutions, des entreprises et des
-              associations...
+              collectivités, des institutions, des...
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
-              <Link
-                className="fit px-8 py-1 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
-                to="/services/etude-sociale-et-demographique"
+              <a
+                className="fit px-8 py-2 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
+                href="/services/etude-sociale-et-demographique"
+                rel="noopener noreferrer"
               >
                 Lire +
-              </Link>
+              </a>
             </div>
           </div>
           {/* IMAGE */}
@@ -99,12 +99,13 @@ const Service = () => {
               d'acquérir des données de qualité...
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
-              <Link
-                to="/services/etude-urbaine"
-                className="fit px-8 py-1 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
+              <a
+                href="/services/etude-urbaine"
+                rel="noopener noreferrer"
+                className="fit px-8 py-2 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
               >
                 Lire +
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -122,15 +123,16 @@ const Service = () => {
               objectifs qu’elle s’est fixée et des besoins auxquelles elle
               répond. Toutefois dans un contexte hautement concurrentiel, il est
               important de faire les bonnes analyses avant et pendant la mise en
-              place de toute entreprise...
+              place...
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
-              <Link
-                to="/services/etude-de-marche"
-                className="fit px-8 py-1 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
+              <a
+                href="/services/etude-de-marche"
+                rel="noopener noreferrer"
+                className="fit px-8 py-2 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
               >
                 Lire +
-              </Link>
+              </a>
             </div>
           </div>
           {/* IMAGE */}
@@ -171,12 +173,12 @@ const Service = () => {
               </p>
             </div>
             <div className="w-full p-1 flex justify-end mt-2">
-              <Link
-                className="fit px-8 py-1 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
-                to="/services/formations"
+              <a
+                className="fit px-8 py-2 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
+                href="/services/formations"
               >
                 Lire +
-              </Link>
+              </a>
             </div>
           </div>
         </div>

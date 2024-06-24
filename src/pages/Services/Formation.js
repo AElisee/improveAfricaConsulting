@@ -10,7 +10,7 @@ const Formation = () => {
         </h3>
       </div>
       <div className="p-5 md:px-10">
-        <h3 className="section-title font-bold text-4xl   pb-15 color_1">
+        <h3 className="section-title font-bold text-4xl  pb-3 color_1">
           Formation
         </h3>
         <hr className="title-hr" />
