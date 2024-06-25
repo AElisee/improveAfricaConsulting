@@ -91,7 +91,7 @@ const Navbar = () => {
             </div>
             {isOpen && (
               <motion.div
-                className="fixed top-0 left-0 min-h-screen w-screen bg-black flex flex-col items-center justify-center text-2xl gap-6 z-30"
+                className="fixed top-0 left-0 min-h-screen w-screen bg-purple-900 flex flex-col items-center justify-center text-2xl gap-6 z-30"
                 variants={listVariants}
                 initial="closed"
                 animate="opened"

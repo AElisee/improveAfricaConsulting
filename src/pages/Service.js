@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { Link } from "react-router-dom";
 
 const Service = () => {
   return (
@@ -31,12 +32,12 @@ const Service = () => {
               nécessaire de connaitre et comprendre...
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
-              <a
+              <Link
                 className="fit px-8 py-2 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
-                href="/services/etude-impact-envrionnematal"
+                to="/services/etude-impact-envrionnematal"
               >
                 Lire +
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -56,13 +57,13 @@ const Service = () => {
               collectivités, des institutions, des...
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
-              <a
+              <Link
                 className="fit px-8 py-2 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
-                href="/services/etude-sociale-et-demographique"
+                to="/services/etude-sociale-et-demographique"
                 rel="noopener noreferrer"
               >
                 Lire +
-              </a>
+              </Link>
             </div>
           </div>
           {/* IMAGE */}
@@ -99,13 +100,12 @@ const Service = () => {
               d'acquérir des données de qualité...
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
-              <a
-                href="/services/etude-urbaine"
-                rel="noopener noreferrer"
+              <Link
+                to="/services/etude-urbaine"
                 className="fit px-8 py-2 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
               >
                 Lire +
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -126,13 +126,12 @@ const Service = () => {
               place...
             </p>
             <div className="w-full p-1 flex justify-end mt-2">
-              <a
-                href="/services/etude-de-marche"
-                rel="noopener noreferrer"
+              <Link
+                to="/services/etude-de-marche"
                 className="fit px-8 py-2 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
               >
                 Lire +
-              </a>
+              </Link>
             </div>
           </div>
           {/* IMAGE */}
@@ -173,12 +172,12 @@ const Service = () => {
               </p>
             </div>
             <div className="w-full p-1 flex justify-end mt-2">
-              <a
+              <Link
                 className="fit px-8 py-2 bg-sky-600 color_4 rounded-md hover:bg-white hover:text-sky-600 hover:font-semibold   hover:border-2 hover:border-sky-600 "
-                href="/services/formations"
+                to="/services/formations"
               >
                 Lire +
-              </a>
+              </Link>
             </div>
           </div>
         </div>

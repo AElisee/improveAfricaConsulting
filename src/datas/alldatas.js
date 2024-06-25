@@ -58,7 +58,7 @@ export const teamMembers = [
 ];
 
 export const phone_number = "+225 07 49 30 59 43";
-export const email = "improveafricaconsulting@gmail.com";
+export const email = "contacts@improveafrica-consulting.com";
 export const address = "27 BP 627 Abidjan 27";
 export const linkedinLink = "https://www.linkedin.com/in/yaojeankouadio";
 export const ytLink = "";

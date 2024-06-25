@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [message, setMessage] = useState(null);
+  const [pending, setPending] = useState(false);
   const formMesRef = useRef(null);
   const form = useRef();
   useEffect(() => {
@@ -13,13 +14,14 @@ const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const formMes = formMesRef.current;
+    // const formMes = formMesRef.current;
+    setPending(true);
 
     form &&
       emailjs
         .sendForm(
-          "service_wfsh8e7",
-          "template_mhq5bdo",
+          "service_j309z89",
+          "template_qd8poue",
           form.current,
           process.env.REACT_APP_ID
         )
@@ -27,21 +29,23 @@ const ContactForm = () => {
           (result) => {
             form.current.reset();
             setMessage(
-              <p className="w-full px-5 py-2 rounded-md text-gray-500 bg-white border-2 border-green-100 shadow-sm text-sm">
+              <p className="w-full pb-2 text-green-600 text-base">
                 Votre message a été transmis avec succès.
               </p>
             );
 
+            setPending(false);
             setTimeout(() => {
               setMessage(null);
             }, 7000);
           },
           (error) => {
             setMessage(
-              <p className="w-full px-5 py-2 rounded-md text-gray-500 bg-white border-2 border-red-100 shadow-sm text-sm">
+              <p className="w-full pb-2 text-red-600 text-base">
                 Oups, problème d'envoi. Veuillez réessayer.
               </p>
             );
+            setPending(false);
           }
         );
   };
@@ -103,8 +107,8 @@ const ContactForm = () => {
                 <div className="my-5">
                   <input
                     type="submit"
-                    value="Soumettre"
-                    className="px-6 py-3 bg-primary color_4 font-semibold rounded-md text-sm md:text-sm hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary"
+                    value={`${pending ? "En cours d'envoi..." : "Soumettre"}`}
+                    className="px-6 py-3 bg-primary color_4 font-semibold rounded-md text-sm md:text-sm hover:bg-white hover:text-primary hover:font-semibold hover:border-2 hover:border-primary cursor-pointer"
                   />
                 </div>
                 <div className=".formMessage">{message}</div>

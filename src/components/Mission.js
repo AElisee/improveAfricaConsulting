@@ -25,13 +25,12 @@ const Mission = () => {
               {/* <hr className="title-hr" /> */}
             </p>
             <div className="w-full my-4">
-              <a
-                href="/a-propos"
+              <Link
+                to="/a-propos"
                 className="px-5 py-3 bg-sky-600 color_4 font-semibold rounded-md text-sm md:text-sm hover:bg-white hover:text-sky-600 hover:font-semibold hover:border-2 hover:border-sky-600"
-                rel="noopener noreferrer"
               >
                 En savoir plus
-              </a>
+              </Link>
             </div>
           </div>
         </div>
